@@ -12,3 +12,12 @@
 Y:\gitroot\WindowsService Contained install\ConsoleApplication1\bin\Debug\WindowsService.exe.config
 Y:\gitroot\WindowsService Contained install\ConsoleApplication1\obj\Debug\WindowsService.exe
 Y:\gitroot\WindowsService Contained install\ConsoleApplication1\obj\Debug\WindowsService.pdb
+C:\Users\rony\chickenoregg\ConsoleApplication1\bin\Debug\WindowsService.exe.config
+C:\Users\rony\chickenoregg\ConsoleApplication1\obj\Debug\WindowsService.exe
+C:\Users\rony\chickenoregg\ConsoleApplication1\obj\Debug\WindowsService.pdb
+C:\Users\rony\chickenoregg\ConsoleApplication1\bin\Debug\WindowsService.exe
+C:\Users\rony\chickenoregg\ConsoleApplication1\bin\Debug\WindowsService.pdb
+C:\Users\rony\chickenoregg\ConsoleApplication1\bin\Debug\WCF Service.dll
+C:\Users\rony\chickenoregg\ConsoleApplication1\bin\Debug\WCF Service.pdb
+C:\Users\rony\chickenoregg\ConsoleApplication1\obj\Debug\WindowsService.csprojResolveAssemblyReference.cache
+C:\Users\rony\chickenoregg\ConsoleApplication1\bin\Debug\ChickenOrEgg.exe.config
