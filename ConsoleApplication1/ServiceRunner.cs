@@ -102,7 +102,7 @@ namespace ChickenOrEgg
         static void Install(string[] args, bool undo = false)
         {
             Console.WriteLine(undo ? "uninstalling" : "installing");
-            using (var inst = new AssemblyInstaller(typeof(ServiceRunner<T>).Assembly, args))
+            using (var inst = new AssemblyInstaller(typeof(T).Assembly, args))
             {
                 IDictionary state = new Hashtable();
 
