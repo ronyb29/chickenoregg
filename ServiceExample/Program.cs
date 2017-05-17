@@ -1,14 +1,13 @@
 ﻿using ChickenOrEgg;
-using CORPOS;
 
-namespace ChickenOrEgg
+namespace ServiceExample
 {
     public static class Program
     {
         public static int Main(string[] args)
         {
-            var sr = new ServiceRunner<CorposService>();
-            return sr.main(args);
+            var sr = new ServiceRunner<ServiceExample>();
+            return sr.Main(args);
         }
     }
 }

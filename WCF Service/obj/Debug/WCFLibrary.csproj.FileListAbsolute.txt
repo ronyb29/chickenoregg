@@ -10,3 +10,9 @@ C:\Users\rony\chickenoregg\WCF Service\bin\Debug\WCF Service.pdb
 C:\Users\rony\chickenoregg\WCF Service\obj\Debug\WCFLibrary.csprojResolveAssemblyReference.cache
 C:\Users\rony\chickenoregg\WCF Service\obj\Debug\WCF Service.dll
 C:\Users\rony\chickenoregg\WCF Service\obj\Debug\WCF Service.pdb
+Y:\chickenoregg\WCF Service\bin\Debug\WCF Service.dll.config
+Y:\chickenoregg\WCF Service\bin\Debug\WCF Service.dll
+Y:\chickenoregg\WCF Service\bin\Debug\WCF Service.pdb
+Y:\chickenoregg\WCF Service\obj\Debug\WCFLibrary.csprojResolveAssemblyReference.cache
+Y:\chickenoregg\WCF Service\obj\Debug\WCF Service.dll
+Y:\chickenoregg\WCF Service\obj\Debug\WCF Service.pdb

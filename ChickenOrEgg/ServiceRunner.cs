@@ -24,7 +24,7 @@ namespace ChickenOrEgg
                 dict[arg] = true;
         }
 
-        public int main(string[] args)
+        public int Main(string[] args)
         {
             var options = new Dictionary<string, bool> //Dictionary lookup is faster than array
             {

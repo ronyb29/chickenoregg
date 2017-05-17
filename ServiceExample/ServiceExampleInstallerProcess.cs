@@ -1,16 +1,16 @@
 ﻿using System.ComponentModel;
 using System.ServiceModel;
 using System.ServiceProcess;
+using WCF_Service;
 
-
-namespace CORPOS
+namespace ServiceExample
 {
     [RunInstaller(true)]
-    public sealed class CorposServiceInstallerProcess : ServiceProcessInstaller
+    public sealed class ServiceExampleInstallerProcess : ServiceProcessInstaller
     {
         private static ServiceHost _serviceHost = new ServiceHost(typeof(Service1));
 
-        public CorposServiceInstallerProcess()
+        public ServiceExampleInstallerProcess()
         {
             Account = ServiceAccount.NetworkService;
             Username = null;

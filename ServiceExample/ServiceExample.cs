@@ -4,12 +4,11 @@ using System.ServiceModel;
 using ChickenOrEgg;
 using WCF_Service;
 
-namespace CORPOS
+namespace ServiceExample
 {
-    class CorposService : StartableService
+    class ServiceExample : StartableService
     {
-        public CorposService()
-            : base()
+        public ServiceExample()
         {
             ServiceName = "TestService";
 
@@ -25,8 +24,9 @@ namespace CORPOS
         {
             OnStart(args);
         }
-        
+
         private static ServiceHost _wcfHost = null;
+
         protected override void OnStart(string[] args)
         {
             base.OnStart(args);
@@ -41,7 +41,10 @@ namespace CORPOS
 
                 foreach (var endpoint in _wcfHost.Description.Endpoints)
                 {
-                    EventLog.WriteEntry(string.Format("Listening on endpoint: {0} ({2})-[{3}]\nUsing contract: {1}\nURI: {4}", endpoint.Name, endpoint.Contract, endpoint.Address, endpoint.Binding.Name, endpoint.ListenUri));
+                    EventLog.WriteEntry(
+                        string.Format("Listening on endpoint: {0} ({2})-[{3}]\nUsing contract: {1}\nURI: {4}",
+                            endpoint.Name, endpoint.Contract, endpoint.Address, endpoint.Binding.Name,
+                            endpoint.ListenUri));
                 }
             }
             finally
@@ -61,13 +64,12 @@ namespace CORPOS
 
         void Host_Faulted(object sender, EventArgs e)
         {
-            EventLog.WriteEntry(string.Format("Host Faulted\n\n\n{0}", e), EventLogEntryType.Error);
+            EventLog.WriteEntry($"Host Faulted\n\n\n{e}", EventLogEntryType.Error);
         }
 
         void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
-            EventLog.WriteEntry(string.Format("uncaught exception\n\n\n{0}", e.ExceptionObject), EventLogEntryType.Error);
+            EventLog.WriteEntry($"uncaught exception\n\n\n{e.ExceptionObject}", EventLogEntryType.Error);
         }
     }
-
 }

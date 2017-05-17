@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D37B162A-8693-4536-9405-5DBB182AEB28}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{F729DC6B-2F8D-4A54-AE35-1650B2132B35}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ChickenOrEgg</RootNamespace>
-    <AssemblyName>ChickenOrEgg</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>ServiceExample</RootNamespace>
+    <AssemblyName>ServiceExample</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -33,23 +33,33 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceRunner.cs" />
-    <Compile Include="StartableService.cs">
+    <Compile Include="ServiceExample.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ServiceExampleInstallerProcess.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChickenOrEgg\ChickenOrEgg.csproj">
+      <Project>{d37b162a-8693-4536-9405-5dbb182aeb28}</Project>
+      <Name>ChickenOrEgg</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WCF Service\WCFLibrary.csproj">
       <Project>{349a4266-f3ca-4acf-bb1b-1b2bfc3c3741}</Project>
       <Name>WCFLibrary</Name>
